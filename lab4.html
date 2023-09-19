@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Complete CSS Website</title>
+        <link rel="stylesheet" href="four.css">
+    </head>
+    <body>
+        <header>
+            <h1>A Complete CSS Website</h1>
+    <div>
+    <figure>
+        <div class="nav">
+            <a href="#0">CPE104L</a>
+            <a href="#0">CPE107L</a>
+            <a href="#0">CPE121L</a>
+            <a class="side" href="#0">CPE 3</a>
+            <img src="moon.png" id="icon">
+        </div>
+        </header>
+        <div class="all">
+        <div class="schllogo">
+            <h2>Mapua Malayan Colleges Mindanao</h2>
+            <p>Excellence and Relevance</p>
+            <img src="mmcm.png" height="200" width="550">
+            <figcaption>
+                Mapúa Malayan Colleges Mindanao is a branch 
+                encompassing Mapua University's technological 
+                and academic excellence in Mindanao, building 
+                a community of competent and innovative leaders 
+                globally in demand. The academic excellence that 
+                Mapúa is known for is embedded in MMCM's DNA. 
+                MMCM brings to Mindanao the World-Class Mapúa 
+                Education that produces graduates who are highly 
+                preferred by industries here and abroad.
+            </figcaption>
+        </div>   
+        <div class="abtslf">
+            <h2>About Me</h2>
+            <img src="self.jpg" height="100" width="100">
+            <figcaption>
+                   Name:Garri Clyde K. Nakano<br>
+                   Age: 20 yrs old<br>
+                   Address: Blk. 1 Lot 19 Annie's Home and Country Village,
+                   Calinan, Davao City<br>
+                   School: Mapua Malayan Colleges Mindanao<br>
+                   Year & Course: 3rd Year-BS in Computer Engineering<br>
+                   Email: nakanofaaol@gmail.com
+            </figcaption>
+        </div>
+        <div class="cea">
+            <h2>College of Engineering and Architecture</h2>
+            <img src="cea.jpg" height="150" width="550">
+            <figcaption>
+                College of Engineering and Architecture (CEA) 
+                transforms its graduates to become globally competitive, 
+                innovative leaders, socially responsible and result-oriented 
+                engineers and architects. MapúaMCM-CEA commits to educate 
+                students imbued with good moral and ethical values while 
+                engaging economically viable research and innovation that 
+                is relevant locally and beyond.
+            </figcaption>
+        </div>
+            <div class="fav">
+            <h2>Favorite Foods</h2>            
+                <img src="curry.jpg" height="100" width="150">
+                <figcaption>-Curry</figcaption>
+                <img src="fry chiks.jpg" height="100" width="150">
+                <figcaption>-Fried Chicken</figcaption>
+                <img src="shimp.jfif" height="100" width="150">
+                <figcaption>-Garlic Buttered Shrimps</figcaption>           
+            </div>
+        </div>
+    </figure>
+    </div>
+    <script>
+        var icon=document.getElementById("icon");
+        icon.onclick=function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="sun.png";
+            }else{
+                icon.src="moon.png";
+            }
+        }
+    </script>
+    </body>
+    <footer>
+        <h5>Laboratory Task 4-Advanced CSS Styling</h5>
+        <h5>CPE107L Software Design Laboratory</h5>
+    </footer>
+</html>
