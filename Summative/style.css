@@ -53,7 +53,7 @@ a{
     min-height: 100vh;
     width: 100%;
     display: flex;
-    background-image: url("rider.png");
+    background-image: url("bg.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -228,14 +228,28 @@ a{
     
 }
 .brrr{
+    background: #d9d9d9;
+    width: 50%;
+    height: 50%;
+    border-radius: 12px;
     margin-left: 30px;
     margin-top: 12px;
-    justify-content: space-between;
+    align-items: center;
+}
+.foods{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
 }
 /*products*/
 .product .p_container {
     position: relative;
-    background: #6a56b3;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     z-index: 10;
 }
@@ -245,7 +259,7 @@ a{
     height: 80%;
     width: 85%;
     z-index: 10;
-    margin-top: 15px;
+    margin-top: 35px;
     margin-left: 30px;
     
     margin-bottom: 15px;
