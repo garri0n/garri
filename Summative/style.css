@@ -191,12 +191,14 @@ a{
     user-select: none;
     color: #0b0217;
 }
-.form_container .button{
+.form_container .buton{
     background: #7d2ae8;
+    border: 2px solid #7d2ae8;
     margin-top: 30px;
     width: 100%;
     padding: 10px 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 .login_signup{
     font-size: 12px;
@@ -208,8 +210,8 @@ a{
     display: flex;
     position: absolute;
     align-items: center;
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     margin-top: 100px;
     margin-left: 50px;
     padding: 30px;
@@ -219,17 +221,16 @@ a{
     border: 5px solid #fff;
 }
 .home .welcome{
-    font-size: 30px;
+    font-size: 20px;
     text-align: left;
     margin-top: -50px;
     margin-left: 10px;
     
 }
 .brrr{
-    
-    
-    align-items: left;
-    
+    margin-left: 30px;
+    margin-top: 12px;
+    justify-content: space-between;
 }
 /*products*/
 .product .p_container {
@@ -242,7 +243,7 @@ a{
     padding: 30px;
     background: #fff;
     height: 80%;
-    width: 80%;
+    width: 85%;
     z-index: 10;
     margin-top: 15px;
     margin-left: 30px;

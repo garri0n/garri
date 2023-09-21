@@ -1,9 +1,9 @@
 const formOpenBtn=document.querySelector("#form-open"),
 home=document.querySelector(".home"),
 formContainer=document.querySelector(".form_container"),
-formCloseBtn=document.querySelector(".form_close"),
-signupBtn=document.querySelector("#signup"),
-loginBtn=document.querySelector("#login"),
+formCloseBtn=document.querySelector(".form_close")
+const signupBtn=document.getElementById("#signup")
+const loginBtn=document.getElementById("#login"),
 pwShowHide=document.querySelector(".pw_hide");
 
 formOpenBtn.addEventListener("click", ()=> home.classList.add("show"))
@@ -32,21 +32,5 @@ loginBtn.addEventListener("click", (e)=>{
     formContainer.classList.remove("active");
 });
 
-/* scroll */
-let navLinks = select('.nav_items .scrollto', true)
-const navlinksActive = () => {
-  let position = window.scrollY + 200
-  navlinks.forEach(navlink => {
-    if (!navlink.hash) return
-    let section = select(navlink.hash)
-    if (!section) return
-    if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-      navlink.classList.add('active')
-    } else {
-      navlink.classList.remove('active')
-    }
-  })
-}
-window.addEventListener('load', navlinksActive)
-onscroll(document, navlinksActive)
+
 
