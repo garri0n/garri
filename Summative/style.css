@@ -1,10 +1,11 @@
 .all{
     font-family: 'Poppins', sans-serif;
+    
 }
 .header{
-    position: fixed;
+    
     height: 80px;
-    width: 100%;
+    width: 95%;
     z-index: 100;
     padding: 0 20px;
     background: #fff;
@@ -19,6 +20,7 @@ a{
 }
 .nav,
 .nav_item{
+    color: #101010;
     display: flex;
     height: 100%;
     align-items: center;
@@ -35,9 +37,9 @@ a{
     color: #d9d9d9;
 }
 .button{
-    color: #7d2ae8;
+    color: #101010;
     padding: 6px 24px;
-    border: 2px solid #7d2ae8;
+    border: 2px solid #121212;
     background: transparent;
     border-radius: 6px;
     cursor: pointer;
@@ -57,21 +59,7 @@ a{
     background-size: cover;
     background-position: center;
 }
-.home::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 100;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s ease-out;
-}
-.home.show::before{
-    opacity: 1;
-    pointer-events: auto;
-}
+
 
 /* Form */
 .form_container{
@@ -85,26 +73,8 @@ a{
     background: #fff;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.4s ease-out;
-    overflow: hidden;
 }
-.home.show .form_container{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
-}
-.signup_form{
-    display: none;
-}
-.form_container.active .signup_form{
-    display: block;
-}
-.form_container.active .login_form{
-    display: block;
-}
+
 
 .form_close{
     position: absolute;
@@ -138,7 +108,7 @@ a{
     transition: all 0.2s ease;   
 }
 .input_box input:focus{
-    border-color: #7d2ae8;
+    border-color: #101010;
 }
 .input_box i{
     position: absolute;
@@ -147,16 +117,16 @@ a{
     font-size:  20px;
     color: #707070;   
 }
-.input_box i.email,
+/*.input_box i.email,
 .input_box i.username,
 .input_box i.password{
     left: -10px;
-}
+}*/
 
 .input_box input:focus ~ i.email,
 .input_box input:focus ~ i.username,
 .input_box input:focus ~ i.password{
-    color: #7d2ae8;
+    color: #101010;
 }
 .input_box i.pw_hide{
     right: 0;
@@ -170,7 +140,7 @@ a{
     justify-content: space-between;
 }
 .form_container a{
-    color: #7d2ae8;
+    color: #101010;
     font-size: 12px;
 }
 .form_container a:hover{
@@ -183,7 +153,7 @@ a{
     font-size: 12px;
 }
 .checkbox input{
-    accent-color: #7d2ae8;
+    accent-color: #101010;
 }
 .checkbox label{
     font-size: 12px;
@@ -192,8 +162,8 @@ a{
     color: #0b0217;
 }
 .form_container .buton{
-    background: #7d2ae8;
-    border: 2px solid #7d2ae8;
+    background: #8b8b8b;
+    border: 2px solid #8b8b8b;
     margin-top: 30px;
     width: 100%;
     padding: 10px 0;
@@ -275,4 +245,11 @@ a{
   
 .product .content p {
     margin-bottom: 30px;
+}
+/*footer*/
+footer{
+    background: #fff;
+    text-align: center;
+    color: #101010;
+    padding: 10px;
 }
